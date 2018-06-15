@@ -1,0 +1,75 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A color identifying game. Identfy the color of given RGB value out of given options.">
+	<meta name="author" content="Mohit Bansal">
+	<title>Color Game</title>
+	<style type="text/css">
+		div.top{
+			background-color: red;
+			text-align: center;
+			padding: 15px 0 15px 0px;
+			font-size: 33px;
+			width: 100%;
+			margin: 0px;
+		}
+		div.middle{
+			background-color: #F5F5F5;
+			display: inline-block;
+			font-size: 28px;
+			margin: 0px;
+			width:100%;
+		}
+		div.bottom{
+			display: inline-block;
+			background-color: black;
+			margin: 0px;
+			height:27s0px;
+			width:100%;
+		}
+		div.box{
+			display: inline-block;
+			border-radius: 15px;
+			background-color: RGB(80,20,100);
+			width: 140px;
+			height: 140px;
+			margin-top: 50px; 
+		}
+		h1, h3{
+			color: #F5F5F5;
+			margin: 0px;
+			padding: 5px 0px 5px 0px;
+		}
+		.text:hover{
+			cursor: context-menu;
+			padding-left: 3px;
+			padding-right: 3px;
+			color: white;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body style="margin: 0px; background-color: black;">
+	<div class="top">
+		<h3><b>THE GREAT</b></h3>
+		<h1><strong class="resetcolor" id="resetcolor"></strong></h1>
+		<h3><b>Color Game</b></h3>
+	</div>
+	<div class="middle">
+		<div class="text" id="newgame" style="margin-left: 374px; display: inline-block; padding-left: 3px; padding-right: 3px;" > New Game </div>
+		<div id="result" style="margin-left: 120px; font-size: 22px; font-weight:bold; display: inline-block;" ></div>
+		<div class="text" id="easy" style="margin-left: 94px; display: inline-block; padding-left: 3px; padding-right: 3px;" > Easy</div>
+		<div class="text" id="hard" style="margin-left: 27px; display: inline-block; padding-left: 3px; padding-right: 3px;" > Hard </div>
+	</div>
+	<div class="bottom">
+		<div class="box"  id="box1" style="margin-left: 360px"></div>
+		<div class="box"  id="box2" style="margin-left: 100px"></div>
+		<div class="box"  id="box3" style="margin-left: 100px"></div>
+		<div class="box"  id="box4" style="margin-left: 360px"></div>
+		<div class="box"  id="box5" style="margin-left: 100px"></div>
+		<div class="box"  id="box6" style="margin-left: 100px"></div>
+	</div>
+	<script type="text/javascript" src="colorgame.js"></script>
+</body>
+</html>
