@@ -22,6 +22,9 @@ function chkcolor(blocknum){
 		console.log("here");
 		reslt.innerHTML= "Correct";
 		ng.innerHTML="Play Again";
+		for(var i=0;i<6;i++){
+			arr[i]=arr[blocknum-1];
+		}
 		b1.style.backgroundColor= arr[blocknum-1];
 		b2.style.backgroundColor= arr[blocknum-1];
 		b3.style.backgroundColor= arr[blocknum-1];
@@ -50,6 +53,8 @@ var numblocks= 6;
 
 hrd.style.backgroundColor= "blue";
 hrd.style.color= "white";
+esy.style.cursor= "context-menu";
+hrd.style.cursor= "context-menu";
 
 ng.addEventListener("click",()=>{
 	setcolor(numblocks);
@@ -67,6 +72,8 @@ ng.addEventListener("click",()=>{
 
 esy.addEventListener("click",()=>{
 	setcolor(3);
+	reslt.style.visibility="hidden";
+	ng.innerHTML="New Game";
 	numblocks=3;
 	hrd.style.color= "black";
 	hrd.style.backgroundColor= "white";
@@ -80,6 +87,8 @@ esy.addEventListener("click",()=>{
 
 hrd.addEventListener("click",()=>{
 	setcolor(6);
+	reslt.style.visibility="hidden";
+	ng.innerHTML="New Game";
 	numblocks=6;
 	hrd.style.backgroundColor= "blue";
 	hrd.style.color= "white";
@@ -112,3 +121,13 @@ b5.addEventListener("click",()=>{
 b6.addEventListener("click",()=>{
 	chkcolor(6);
 })
+
+/*esy.hover(()=>{
+	esy.style.color= "white";
+	esy.style.backgroundColor= "blue";
+});
+
+hrd.hover(()=>{
+	hrd.style.color= "white";
+	hrd.style.backgroundColor= "blue";
+});*/
